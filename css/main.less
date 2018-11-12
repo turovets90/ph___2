@@ -409,6 +409,9 @@ ul{
   .advanced_search_toggle{
     background: none;
     margin-right: 24%;
+    @media (max-width:991px){
+      margin-right: 22%;
+    }
   }
 
 }
@@ -2209,13 +2212,15 @@ h1, .h1{
   border-bottom: 1px solid #DBDBDB;
   padding: 10px 20px;
   margin-top: 28px;
-  margin-left: -15px;
-  margin-right: -15px;
+
   @media (min-width:1200px){
     .flex();
     .ai-center();
+
   }
   @media (max-width:1200px){
+    margin-left: -15px;
+    margin-right: -15px;
     margin-top: 0;
     display: none;
     div{
@@ -2506,6 +2511,9 @@ h1, .h1{
       margin-right: 10px;
       background: none;
       font: 14px "Helvetica";
+      @media (max-width:767px){
+        margin-right: 6px;
+      }
       &.active{
         color: #fff;   background: @blue;
       }
@@ -3615,6 +3623,10 @@ margin-bottom: 55px;
   background: #fff;
   border-left: 5px solid #7ED321;
   padding-left: 45px;
+  @media (max-width:1200px){
+    height: auto;
+    padding: 20px 15px 40px 15px;
+  }
   p{
     margin-bottom: 0;
     line-height: 22px;
@@ -3941,7 +3953,7 @@ margin-bottom: 55px;
     border-bottom: 1px solid #DBDBDB;
     position: relative;
 
-    @media (min-width:1200px){
+    @media (max-width:1200px){
       margin-right: -15px;
       margin-left: -15px;
     }
@@ -4266,7 +4278,7 @@ margin-bottom: 55px;
       }
 
       .flex_end_center{
-        @media (min-width:768px){
+        @media (min-width:1200px){
           .flex();
           .j-end();
           .ai-center();
@@ -4673,8 +4685,10 @@ button{
   }
 
 
+
+
   .item__item .address:before{
-    display: none;
+   // display: none;
   }
 
 
@@ -5668,5 +5682,17 @@ form{
       }
     }
   }
+
+}
+
+#addresses_content{
+  @media (max-width:1200px){
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+
+#purchase_history_content{
 
 }
